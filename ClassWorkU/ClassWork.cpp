@@ -28,7 +28,7 @@ void FunctionForZ(double xBegin, double xEnd, double xH, double a, double b, dou
 
 void Show_F(double res, double x, double a, double b, double c)
 {
-	if ((int)a % (int)b & !((int)a | (int)c))
+	if ((int)a % (int)b & !((int)a | (int)c) != 0)
 		cout << "x = " << setw(5) << left << x << " | " << setw(5) << left << " F = " << res << endl;
 	else 
 		cout  << "x = " << setw(5) << left << x << " | " << setw(5) << left << " F = " << (int)res << endl;
