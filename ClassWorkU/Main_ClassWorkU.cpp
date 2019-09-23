@@ -23,7 +23,7 @@ int main()
 	cout << "Input X_End: " << endl;
 	cin >> xEnd;
 
-	if (xWork == 0) return -1;
+	if (xWork == 0 || xEnd <= xBegin) return -1;
 
 	FunctionForZ(xBegin, xEnd, xWork, a, b, c);
 	return 0;
